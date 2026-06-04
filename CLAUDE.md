@@ -4,8 +4,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository
 
-GitHub: https://github.com/rahaidar/Learning  
-All changes should be committed and pushed after each meaningful edit. Use descriptive commit messages that explain *why*, not just *what*.
+GitHub: https://github.com/rahaidar/Learning
+
+## Git workflow — required
+
+Commit and push to GitHub after every meaningful unit of work. This is non-negotiable: it ensures no progress is ever lost and makes it easy to revert to any previous state.
+
+- **Commit granularity:** one logical change per commit — a feature, a fix, a refactor. Don't batch unrelated edits.
+- **Commit messages:** subject line explains *what and why* in plain English (e.g. `Fix runner enemies clipping through walls on spawn`). Add a short body if the change needs context.
+- **Always push:** every local commit must be followed by `git push` before the task is considered done.
+- **Format:**
+  ```bash
+  git add <specific files>
+  git commit -m "Short imperative summary
+
+  Optional body explaining motivation or trade-offs.
+
+  Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+  git push
+  ```
 
 ## Running the games
 
